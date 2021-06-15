@@ -16,17 +16,10 @@ export class MaskedInput {
   @Prop({ mutable: true, reflect: true })
   isVisible = false;
 
-  componentDidLoad() {
-
-  }
-
   render() {
-    let icon: string;
-    if (this.isVisible) {
-      icon = 'visibility';
-    } else {
-      icon = 'visibility_off';
-    }
+    const icon = this.isVisible
+      ? 'visibility'
+      : 'visibility_off';
 
     return (
       <div class='container'>
