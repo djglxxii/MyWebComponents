@@ -5,14 +5,17 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0' />
   <title>Stencil Component Starter</title>
 
+  <link href='https://fonts.googleapis.com/css2?family=Material+Icons' rel='stylesheet'>
+
   <script type='module' src='/build/aegis-web-components.esm.js'></script>
   <script nomodule src='/build/aegis-web-components.js'></script>
 
-  <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
+  <script type='module' src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js'></script>
+  <script nomodule src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js' defer></script>
 </head>
 <body>
-<form x-data='{"ctl00$MainContent$GenderOptions":[{"Item1":0,"Item2":"Male"},{"Item1":1,"Item2":"Female"},{"Item1":3,"Item2":"Other"}],"ctl00$MainContent$Firstname":"David","ctl00$MainContent$Lastname":"Gardner","ctl00$MainContent$Zipcode":22963,"ctl00$MainContent$Gender":"0"}'>
+<form
+  x-data='{"ctl00$MainContent$GenderOptions":[{"Item1":0,"Item2":"Male"},{"Item1":1,"Item2":"Female"},{"Item1":3,"Item2":"Other"}],"ctl00$MainContent$Firstname":"David","ctl00$MainContent$Lastname":"Gardner","ctl00$MainContent$Zipcode":22963,"ctl00$MainContent$Gender":"0"}'>
   <div>
     <aegis-editable-list x-model='ctl00$MainContent$GenderOptions'></aegis-editable-list>
   </div>
