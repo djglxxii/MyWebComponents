@@ -14,23 +14,23 @@ export class MaskedInput {
   value: string;
 
   @Prop({ mutable: true, reflect: true })
-  isVisible = false;
+  isMasked = true;
 
   render() {
-    const icon = this.isVisible
-      ? 'visibility'
-      : 'visibility_off';
+    const icon = this.isMasked
+      ? 'visibility_off'
+      : 'visibility';
 
     return (
       <div class='container'>
 
         <input
-          type={this.isVisible ? 'text' : 'password'}
+          type={this.isMasked ? 'password' : 'text'}
           name={this.name}
           value={this.value} />
 
         <span class='material-icons'
-              onClick={() => this.isVisible = !this.isVisible}
+              onClick={() => this.isMasked = !this.isMasked}
         >{icon}</span>
 
       </div>

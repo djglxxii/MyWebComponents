@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property    | Attribute    | Description | Type      | Default     |
-| ----------- | ------------ | ----------- | --------- | ----------- |
-| `isVisible` | `is-visible` |             | `boolean` | `false`     |
-| `name`      | `name`       |             | `string`  | `undefined` |
-| `value`     | `value`      |             | `string`  | `undefined` |
+| Property   | Attribute   | Description | Type      | Default     |
+| ---------- | ----------- | ----------- | --------- | ----------- |
+| `isMasked` | `is-masked` |             | `boolean` | `true`      |
+| `name`     | `name`      |             | `string`  | `undefined` |
+| `value`    | `value`     |             | `string`  | `undefined` |
 
 
 ----------------------------------------------
